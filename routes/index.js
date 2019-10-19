@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-let index = require("../controllers/index")
+let landing = require("../controllers/landing")
 
 /* GET home page. */
-router.get('/', index.get_landing);
+router.get('/', landing.get_landing);
 
 /* POST email on home page. */
-router.post('/', index.submit_email);
+router.post('/', landing.submit_email);
 
 module.exports = router;
