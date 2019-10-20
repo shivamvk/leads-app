@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editing lead</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h3>Editing lead <%= lead.id%></h3>
+    <form method="POST" action="/lead/<%= lead.id%>/edit">
+      <input placeholder="Enter your email address!" value="<%= lead.email%>" type="email" name="email">
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>

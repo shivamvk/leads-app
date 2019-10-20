@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ol>
+        <% leads.forEach(lead => { %>
+            <li><%= lead.email %> <a href="/lead/<%= lead.id%>">Details</a> <a href="/lead/<%= lead.id%>/edit">Edit</a></li>
+        <% }); %>
+    </ol>
+  </body>
+</html>
